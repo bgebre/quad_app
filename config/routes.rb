@@ -1,8 +1,11 @@
 QuadApp::Application.routes.draw do
-  get "static_pages/about"
-  get "static_pages/shows"
-  get "static_pages/board"
-  get "static_pages/contact"
+  
+  match '/home',      to:'static_pages#home',     via:'get'
+  match '/about',     to:'static_pages#about',    via:'get'
+  match '/shows',     to:'static_pages#shows',    via:'get'
+  match '/board',     to:'static_pages#board',    via:'get'
+  match '/contact',   to:'static_pages#contact',  via:'get'
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
