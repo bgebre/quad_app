@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>QuadApp</title>
+   <head>
+  <title>Quadramics</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400, 400italic,600,700,800" rel="stylesheet" type="text/css">
+  <link href="styles.css" rel="stylesheet" type="text/css" media="screen"> 
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=281622778514692"></script><script type="text/javascript" src="//use.typekit.net/bpy3zug.js"></script><style type="text/css"></style>
+  <style type="text/css">.tk-blambot-fx-pro{font-family:"blambot-fx-pro",sans-serif;}</style><link rel="stylesheet" href="http://use.typekit.net/c/3515ba/blambot-fx-pro:i4:i7:n4:n7.PY8:N:2,PYB:N:2,PY7:N:2,PY9:N:2/d?3bb2a6e53c9684ffdc9a9afe195b2a6290e57de54ffd90397ef00de301bb51d79960335805d5641f10ffecff74969006daabb155bb10fc6ff3397fc70582ea4f8038b3c6b19f8df0a53362403e5e0418ae3ecc"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
 
-<%= yield %>
-
-</body>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
 </html>
