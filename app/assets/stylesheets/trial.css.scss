@@ -1,0 +1,275 @@
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+  
+  /* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after, .sample#postnormal .text:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+  
+/*------Begin------*/
+  
+body {
+  background: #58514d;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+  
+a {
+  color: inherit;
+  text-decoration: none; }
+
+footer {
+    padding: 100px 20px 150px 20px;
+    margin: 0 auto;
+    width: 900px;}
+  footer p {
+    color: #fff;
+    font: 400 13px/21px "Open Sans"; 
+    float: left;
+    width: 350px;}
+  footer p a {
+      color: #fff;
+      font-weight: 700;
+      text-align:center;}
+  footer p a:hover {
+        color: #bebebe; }
+  footer h1 {
+    color: #fff;
+    font: 700 80px/30px "blambot-fx-pro";
+    letter-spacing: 0px;}
+  footer h2 {
+    color: #b7b7b7;
+    font: 400 50px/84px "blambot-fx-pro";
+    margin: 0 0 20px 0;}
+
+.page#photos1 {
+    background-image:url(images/photos1.png);
+    background-repeat:repeat-x;
+    height:200px;}
+
+.page#photos2 {
+    background-image:url(images/photos2.png);
+    background-repeat:repeat-x;
+    height:200px;}
+
+.page#intro {
+  background: #f67d42;
+  padding: 100px 20px 100px 20px; }
+  .page#intro .text {
+    margin: 0 auto;
+    width: 800px; }
+  .page#intro h1 {
+    color: #fff;
+    font: 700 150px/110px "blambot-fx-pro";
+    letter-spacing: 10px;
+    text-align: center;}
+  .page#intro h2 {
+    color: #b24d19;
+    font: 400 120px/100px "blambot-fx-pro";
+    letter-spacing: 10px;
+    text-align: center;}
+  .page#intro h3 {
+    color: #fff;
+    font: 300 18px/24px "Open Sans";
+    margin: 40px 10px 10px 0;
+    text-align: center;}
+
+
+.page#about {
+  background: #fcfaf2;
+  padding: 125px 40px 250px 40px; }
+  .page#about .text {
+    margin: 0 auto;
+    width: 800px;
+    padding: 0px 0px 250px 0px; }
+  .page#about h1 {
+    color: #b24d19;
+    font: 700 80px/30px "blambot-fx-pro";
+    letter-spacing: 0px;}
+  .page#about h2 {
+    color: #58514d;
+    font: 400 50px/84px "blambot-fx-pro";
+    margin: 0 0 20px 0;}
+  .page#about p, .page#about ul {
+    color: #58514d;
+    float: left;
+    font: 400 13px/21px "Open Sans";
+    margin: 0 50px 0 0;
+    width: 350px; }
+  .page#about ul {
+    margin: 0;
+    position: relative;
+    top: -2px;
+    width: 300px; }
+    .page#about ul li {
+      color: #b24d19;
+      font: 400 25px/21px "blambot-fx-pro";
+      text-transform: uppercase;
+      margin: 15px 0 5px 0;
+      letter-spacing: 2px;}
+    .page#about a {
+      color: #58514d;
+      font-weight: 700; }
+    .page#about a:hover {
+      color: #000; }
+    
+
+.page#current {
+  background: #f6b142;
+  padding: 100px 40px 230px 40px; }
+  .page#current .text {
+    margin: 0 auto;
+    width: 800px;
+    padding: 0px 0px 230px 0px;}
+  .page#current h1 {
+    color: #fff;
+    font: 400 40px/60px "blambot-fx-pro";
+    text-align: center;}
+  .page#current h2 {
+    color: #b26b19;
+    font: 700 100px/70px "blambot-fx-pro";
+    text-align: center;}
+  .page#current h3 {
+    color: #b26b19;
+    font: 400 50px/50px "blambot-fx-pro";
+    text-align: center;}
+  .page#current h4 {
+    color: #6d4514;
+    font: 400 25px/25px "blambot-fx-pro";
+    text-align: center;
+    margin-bottom:40px;}
+  .page#current p {
+    color: #6d4514;
+    float: left;
+    font: 400 13px/21px "Open Sans";
+    margin: 10px 50px 0 0;
+    width: 350px;
+    height: 130px;}
+  .page#current p#full-width {
+    color: #6d4514;
+    font: 400 13px/21px "Open Sans";
+    margin: 0 50px 0 0;
+    width: 800px; }
+  .page#current span {
+    color: #fff;
+    font: 400 25px/21px "blambot-fx-pro";
+    letter-spacing: 2px;}
+  .page#current ul {
+    margin: 0;
+    position: relative;
+    top: -2px;
+    width: 300px; }
+    .page#current ul li {
+      color: #b24d19;
+      font: 400 20px/30px "blambot-fx-pro";
+      text-transform: uppercase;
+      margin-top: 15px;}
+   .page#current a {
+      color: #6d4514;
+      font-weight: 700; }
+   .page#current a:hover {
+      color: #261808; }
+    
+.page#board {
+  background: #fcfaf2;
+  padding: 125px 40px 550px 40px; }
+  .page#board .text {
+    margin: 0 auto;
+    width: 800px;
+    padding: 0px 0px 850px 0px;}
+  .page#board h1 {
+    color: #b24d19;
+    font: 700 80px/30px "blambot-fx-pro";
+    letter-spacing: 0px;}
+  .page#board h2 {
+    color: #58514d;
+    font: 400 50px/84px "blambot-fx-pro";
+    margin: 0 0 20px 0;}
+  .page#board .member {
+    color: #58514d;
+    float: left;
+    font: 400 14px/20px "Open Sans";
+    margin: 0 60px 50px 0;
+    width: 200px;
+    height: 280px;
+    text-align:center;
+    letter-spacing:1px;}
+  .page#board .memberhidden {
+    visibility: hidden;
+    color: #58514d;
+    float: left;
+    font: 400 14px/20px "Open Sans";
+    margin: 0 60px 50px 0;
+    width: 200px;
+    height: 280px;
+    text-align:center;
+    letter-spacing:1px;}
+  .page#board span {
+    color: #b24d19;
+    font: 400 25px/36px "blambot-fx-pro";}
+  .page#board img {
+    position: relative;
+    width: 200px;
+    border-radius:100px;
+    opacity:0.8;}
+  .page#board img:hover {
+    opacity:1;
+    filter:alpha(opacity=40);}
+
+.fb-like-box {
+    background-color: #fff;
+    border-radius:10px;
+    margin: 0 0 20px 30px;}
+
+.twitter-timeline {
+    border-radius:10px;
+    float:left;
+    margin: 0 0 100px 30px;
+    max-width: 80%;
+    height: auto}
+
+
+    
+     
+  	

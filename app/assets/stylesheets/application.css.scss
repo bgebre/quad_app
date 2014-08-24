@@ -51,13 +51,13 @@ table {
   
 /*------Begin------*/
 
+
 .navbar li, .navbar ul {
   display: inline-block;
   float:right;
 }
 .navbar a {
   color: white;
-  padding: 6px;
 }
 
 body {
@@ -92,22 +92,26 @@ footer {
     color: #b7b7b7;
     font: 400 50px/84px "blambot-fx-pro";
     margin: 0 0 20px 0;}
+.container {
+  width:100%;
+  height:100%;
+}
 
 .page#photos1 {
-    background-image:url(images/photos1.png);
-    background-repeat:repeat-x;
-    height:200px;
-    width: 100%;}
+    background-image:url(images/photos1.png) ;
+  
+    }
 
 .page#photos2 {
     background-image:url(images/photos2.png);
     background-repeat:repeat-x;
-    height:200px;}
+    height:200px;
+    width:1600px;}
 
 
 .page#intro {
   background: #f67d42;
-  padding: 100px 20px 100px 20px; 
+  padding: 100px 80px 100px 80px; 
   }
   .page#intro .text {
     margin: 0 auto;
