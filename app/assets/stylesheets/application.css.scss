@@ -20,7 +20,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+   }
 
 ol, ul {
   list-style: none; }
@@ -51,44 +52,90 @@ table {
   
 /*------Begin------*/
 
-
-.navbar li, .navbar ul {
-  display: inline-block;
-  float:right;
+/*------Navbar------*/
+.navbar {
+  width: 100%;
+  margin: 0;
+  background-color: transparent;
+  background: transparent; 
+}
+.navbar li{
+  height: auto;
+  float: right;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #000;
 }
 .navbar a {
   color: white;
 }
+.navbar li ul   {
+    display: none;  /* Hides the drop-down menu */
+    height: auto;                 
+    margin: 0; /* Aligns drop-down box underneath the menu item */
+    padding: 0; /* Aligns drop-down box underneath the menu item */ 
+    text-align: center;    
+    }       
+
+.navbar li:hover ul   {
+  display: block; /* Displays the drop-down box when the menu item is hovered over */
+}
+
+.navbar li ul li {
+   display: table-cell; 
+}
+
+.navbar li ul li a:hover {
+  display: table-cell; 
+  text-align: center;
+  }
+
+.navbar li ul li a  {
+    display: table-row;
+    text-align: center;
+    border-left: 1px solid #1f5065; 
+    border-right: 1px solid #1f5065; 
+    border-top: 1px solid #74a3b7; 
+    border-bottom: 1px solid #1f5065; 
+  }
+
+.navbar ul li   {
+    display: table-row;
+  }
+
+ /*------body------*/
 
 body {
   background: #58514d;
   font-family: "Open Sans", helvetica, arial, sans-serif;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%; 
+  height: 100%;}
   
 a {
   color: inherit;
   text-decoration: none; }
 
-footer {
+.page#contact {
     padding: 100px 20px 150px 20px;
     margin: 0 auto;
     width: 900px;}
-  footer p {
+  .page#contact  p {
     color: #fff;
     font: 400 13px/21px "Open Sans"; 
     float: left;
     width: 350px;}
-  footer p a {
+  .page#contact  p a {
       color: #fff;
       font-weight: 700;
       text-align:center;}
-  footer p a:hover {
+  .page#contact  p a:hover {
         color: #bebebe; }
-  footer h1 {
+  .page#contact  h1 {
     color: #fff;
     font: 700 80px/30px "blambot-fx-pro";
     letter-spacing: 0px;}
-  footer h2 {
+  .page#contact  h2 {
     color: #b7b7b7;
     font: 400 50px/84px "blambot-fx-pro";
     margin: 0 0 20px 0;}
@@ -98,15 +145,17 @@ footer {
 }
 
 .page#photos1 {
-    background-image:url(images/photos1.png) ;
-  
+    background-image:url(images/photos1.png);
+    background-repeat:repeat-x;
+    height:100%;
+    padding:50px 0px 0px 0px;
     }
 
 .page#photos2 {
     background-image:url(images/photos2.png);
     background-repeat:repeat-x;
     height:200px;
-    width:1600px;}
+    }
 
 
 .page#intro {

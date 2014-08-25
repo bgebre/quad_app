@@ -2,9 +2,10 @@
 <html>
    <head>
   <title>Quadramics</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag   "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400, 400italic,600,700,800" rel="stylesheet" type="text/css">
   <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
   <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=281622778514692"></script>
@@ -15,12 +16,13 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
 </head>
 <body>
-    <div class="container">
-      <%= render 'layouts/header' %>
+     <%= render 'layouts/header' %>
+     <div class="container">      
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
       <%= yield %>
+      <%= render 'layouts/footer' %>
     </div>
   </body> 
 </html>

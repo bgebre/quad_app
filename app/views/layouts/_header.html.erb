@@ -1,12 +1,36 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar transparent navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "QUADRAMICS", '/root', id: "logo" %>
+      <%= link_to "QUADRAMICS", '/home', id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "About",    '/root' %></li>
-          <li><%= link_to "Board",    '/help' %></li>
-          <li><%= link_to "Get", '#' %></li>
+          <li> <%= link_to "About",'#about' %></li>
+          <li><%= link_to "Board",'/board' %>
+              <ul>
+                <li><%= link_to "2014-2015",'/currentboard' %></li>
+                <br></br>
+                <li><%= link_to "Past boards",'/pastboards' %></li>
+              </ul>
+          </li>
+          <li><%= link_to "Shows",'/shows' %>
+              <ul>
+                <li><%= link_to "Past shows",'/pastshows' %></li>
+                <br></br>
+                <li><%= link_to "Current production",'/currentshow' %></li>
+              </ul>
+          </li>
+          <li><%= link_to "Get Involved", '#' %>
+              <ul>
+                <li><%= link_to "FAQs",'/involved' %></li>
+                <br></br>
+                <li><%= link_to "Directors",'/involved' %></li>
+                <br></br>
+                <li><%= link_to "Techies",'/involved' %></li>
+                <br></br>
+                <li><%= link_to "Actors",'/involved' %></li>
+              </ul>
+          </li>
+          <li><%= link_to "Contact",      '#'     %></li>
         </ul>
       </nav>
     </div>
